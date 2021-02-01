@@ -4,9 +4,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        CountDiv func = new CountDiv();
-        int result = func.solution(11, 345, 17);
+        int [] P = {0, 0, 1};
+        int [] Q = {0, 1, 1};
+        DNASquence func = new DNASquence();
+        int [] result = func.solution("GT", P, Q);
        
-        System.out.println(result);
+        for(int r: result)
+        System.out.println(r + ", ");
     }
 }
