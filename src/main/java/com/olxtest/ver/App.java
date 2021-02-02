@@ -4,12 +4,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        int [] P = {0, 0, 1};
-        int [] Q = {0, 1, 1};
-        DNASquence func = new DNASquence();
-        int [] result = func.solution("GT", P, Q);
+        int [] P = {4, 2, 2, 5, 1, 5, 8};
+        MinAvTwoSlice func = new MinAvTwoSlice();
+        int result = func.solution(P);
        
-        for(int r: result)
-        System.out.println(r + ", ");
+        
+        System.out.println(result);
     }
 }
